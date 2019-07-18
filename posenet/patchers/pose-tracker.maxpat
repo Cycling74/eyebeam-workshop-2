@@ -109,12 +109,12 @@
 					"patching_rect" : [ 972.0, 644.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
-							"parameter_mmin" : -70.0
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0
 						}
 
 					}
@@ -455,7 +455,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 222.0, 329.0, 256.0 ],
+					"patching_rect" : [ 34.0, 222.0, 182.0, 148.0 ],
 					"rendermode" : 1,
 					"url" : "file:///Users/starakaj/git/eyebeam-workshop-2/posenet/src/pose-camera.html"
 				}
@@ -722,9 +722,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-56::obj-17" : [ "number", "number", 0 ],
 			"obj-56::obj-19" : [ "number[1]", "number[1]", 0 ],
 			"obj-58" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-56::obj-17" : [ "number", "number", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -739,9 +739,16 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "autoscale.maxpat",
+				"bootpath" : "~/git/eyebeam-workshop-2/patchers",
+				"patcherrelativepath" : "../../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "p-oscillator.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/facetracking/patchers",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Library/facetracking/patchers",
+				"bootpath" : "~/git/eyebeam-workshop-2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
