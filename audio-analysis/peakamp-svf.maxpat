@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 48.0, 80.0, 1218.0, 603.0 ],
+		"rect" : [ 109.0, 79.0, 1321.0, 644.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,27 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 592.0, 22.0, 150.0, 20.0 ],
+					"text" : "scope~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 588.0, 96.0, 492.0, 123.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -312,13 +333,13 @@
 					"patching_rect" : [ 281.0, 195.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[2]",
-							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "toggle[2]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "toggle[2]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -338,13 +359,13 @@
 					"patching_rect" : [ 205.0, 195.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[1]",
-							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "toggle[1]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "toggle[1]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -364,13 +385,13 @@
 					"patching_rect" : [ 129.0, 195.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle",
-							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ],
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "toggle",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "toggle",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -646,18 +667,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-9::obj-35" : [ "[5]", "Level", 0 ],
-			"obj-54" : [ "toggle", "toggle", 0 ],
 			"obj-53" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-54" : [ "toggle", "toggle", 0 ],
 			"obj-52" : [ "toggle[2]", "toggle[2]", 0 ],
 			"obj-9::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-9::obj-35" : [ "[5]", "Level", 0 ],
 			"parameterbanks" : 			{
 
 			}
