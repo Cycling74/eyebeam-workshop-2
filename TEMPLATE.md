@@ -64,7 +64,7 @@ Students will gain a deepened understanding of the Max programming environment a
 #### 15: Wrap up
 
 ## Materials Needed
-Students will need a laptop or desktop computer running MacOS 10.11.6 or later or Windows 7 with SP1, a webcam, and a copy of Max8 installed. 
+Students will need a laptop or desktop computer running MacOS 10.11.6 or later or Windows 7 with SP1, a webcam, and a copy of Max 8 installed. 
 
 ## Exercises To Do Before Class
 As mentioned, there is a workshop that we intend to come before this one. However, if anyone has had about four hours of experience with Max, it should be enough to be ready for this class.

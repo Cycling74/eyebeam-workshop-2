@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 52.0, 82.0, 1184.0, 1038.0 ],
+		"rect" : [ 218.0, 82.0, 1184.0, 1038.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -148,7 +148,7 @@
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 723.0, 707.5, 60.0, 22.0 ],
@@ -189,7 +189,7 @@
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 524.0, 707.5, 60.0, 22.0 ],
@@ -230,7 +230,7 @@
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 315.0, 707.5, 60.0, 22.0 ],
@@ -2297,13 +2297,13 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "jit.pwindow",
-									"name" : "1066.viewr",
+									"name" : "1003.viewr",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 353.0, 227.803618914062469, 392.0, 262.0 ],
+									"patching_rect" : [ 353.0, 227.803618914062469, 179.0, 126.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 392.0, 262.0 ]
+									"presentation_rect" : [ 0.0, 0.0, 179.0, 126.0 ]
 								}
 
 							}
@@ -2944,13 +2944,13 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "jit.pwindow",
-									"name" : "1067.viewr",
+									"name" : "1004.viewr",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 353.0, 227.803618914062469, 194.0, 262.0 ],
+									"patching_rect" : [ 353.0, 227.803618914062469, 87.0, 126.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 194.0, 262.0 ]
+									"presentation_rect" : [ 0.0, 0.0, 87.0, 126.0 ]
 								}
 
 							}
@@ -3429,13 +3429,13 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "jit.pwindow",
-									"name" : "1068.viewr",
+									"name" : "1005.viewr",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 353.0, 227.803618914062469, 194.0, 262.0 ],
+									"patching_rect" : [ 353.0, 227.803618914062469, 87.0, 126.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 194.0, 262.0 ]
+									"presentation_rect" : [ 0.0, 0.0, 87.0, 126.0 ]
 								}
 
 							}
@@ -3702,8 +3702,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 36.0, 130.0, 147.0, 22.0 ],
-					"text" : "jit.grab @output_texture 1"
+					"patching_rect" : [ 36.0, 130.0, 208.0, 22.0 ],
+					"text" : "jit.grab @output_texture 1 @unique 1"
 				}
 
 			}
@@ -4945,8 +4945,8 @@
 			}
 , 			{
 				"name" : "autoscale.maxpat",
-				"bootpath" : "~/Downloads/eyebeam-workshop-2-master/patchers",
-				"patcherrelativepath" : "../Downloads/eyebeam-workshop-2-master/patchers",
+				"bootpath" : "~/git/eyebeam-workshop-2/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
