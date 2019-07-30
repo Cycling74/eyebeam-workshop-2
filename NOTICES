@@ -1,0 +1,7 @@
+PoseNet is licensed under the Apache-2.0 license, Copyright (c) 2018 Google LLC. All Rights Reserved.
+Original code can be found here: https://github.com/tensorflow/tfjs-models
+The code has been modified slightly to expose model data to Max
+
+The CLM facetracker is licensed under the MIT license, Copyright (c) 2017 Audun Mathias Øygard
+Original code can be found here: https://github.com/auduno/clmtrackr
+The code has been modified slightly to expose model data to Max
