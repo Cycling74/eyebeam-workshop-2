@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 7,
+			"minor" : 1,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 308.0, 318.0, 1312.0, 693.0 ],
+		"rect" : [ 34.0, 79.0, 1380.0, 680.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,31 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1207.0, 37.0, 150.0, 20.0 ],
+					"text" : "Click to scale your inputs"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1211.0, 67.0, 96.0, 96.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
@@ -108,7 +132,7 @@
 				"box" : 				{
 					"id" : "obj-95",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1049.0, 276.0, 60.0, 22.0 ],
@@ -170,7 +194,7 @@
 				"box" : 				{
 					"id" : "obj-90",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 875.0, 276.0, 60.0, 22.0 ],
@@ -240,14 +264,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 7,
+							"minor" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 831.0, 286.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -274,6 +298,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -306,8 +331,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 53"
+									"patching_rect" : [ 138.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 3"
 								}
 
 							}
@@ -318,8 +343,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 47"
+									"patching_rect" : [ 50.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 4"
 								}
 
 							}
@@ -330,8 +355,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 81.0, 22.0 ],
-									"text" : "route position"
+									"patching_rect" : [ 50.0, 100.0, 71.0, 22.0 ],
+									"text" : "route points"
 								}
 
 							}
@@ -473,14 +498,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 7,
+							"minor" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 823.0, 301.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -507,6 +532,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -539,8 +565,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 44"
+									"patching_rect" : [ 138.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 2"
 								}
 
 							}
@@ -551,8 +577,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 50"
+									"patching_rect" : [ 50.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 1"
 								}
 
 							}
@@ -563,8 +589,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 81.0, 22.0 ],
-									"text" : "route position"
+									"patching_rect" : [ 50.0, 100.0, 71.0, 22.0 ],
+									"text" : "route points"
 								}
 
 							}
@@ -686,7 +712,7 @@
 				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 706.0, 276.0, 60.0, 22.0 ],
@@ -737,7 +763,7 @@
 				"box" : 				{
 					"id" : "obj-73",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 544.0, 276.0, 60.0, 22.0 ],
@@ -782,14 +808,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 7,
+							"minor" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 745.0, 293.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -816,6 +842,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -848,8 +875,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 33"
+									"patching_rect" : [ 138.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 0"
 								}
 
 							}
@@ -860,8 +887,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 41"
+									"patching_rect" : [ 50.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 9"
 								}
 
 							}
@@ -872,8 +899,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 81.0, 22.0 ],
-									"text" : "route position"
+									"patching_rect" : [ 50.0, 100.0, 71.0, 22.0 ],
+									"text" : "route points"
 								}
 
 							}
@@ -980,14 +1007,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 7,
+							"minor" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 935.0, 363.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1014,6 +1041,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -1046,8 +1074,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 17"
+									"patching_rect" : [ 138.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 8"
 								}
 
 							}
@@ -1058,8 +1086,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 32"
+									"patching_rect" : [ 50.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 7"
 								}
 
 							}
@@ -1070,8 +1098,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 81.0, 22.0 ],
-									"text" : "route position"
+									"patching_rect" : [ 50.0, 100.0, 71.0, 22.0 ],
+									"text" : "route points"
 								}
 
 							}
@@ -1178,14 +1206,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 7,
+							"minor" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 892.0, 396.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1212,6 +1240,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -1244,8 +1273,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 21"
+									"patching_rect" : [ 138.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 6"
 								}
 
 							}
@@ -1256,8 +1285,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 157.0, 68.0, 22.0 ],
-									"text" : "getpoint 27"
+									"patching_rect" : [ 50.0, 157.0, 61.0, 22.0 ],
+									"text" : "getpoint 5"
 								}
 
 							}
@@ -1268,8 +1297,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 81.0, 22.0 ],
-									"text" : "route position"
+									"patching_rect" : [ 50.0, 100.0, 71.0, 22.0 ],
+									"text" : "route points"
 								}
 
 							}
@@ -1457,8 +1486,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 18.0, 93.0, 22.0 ],
-					"text" : "clm-tracker.html"
+					"patching_rect" : [ 34.0, 18.0, 104.0, 22.0 ],
+					"text" : "mesh-tracker.html"
 				}
 
 			}
@@ -1476,15 +1505,14 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 222.0, 459.0, 391.0 ],
+					"patching_rect" : [ 34.0, 222.0, 436.0, 370.0 ],
 					"rendermode" : 1,
-					"url" : "file:///Users/starakaj/Documents/Max%208/Library/facetracking/src/clm-tracker.html"
+					"url" : "file://mesh-tracker.html"
 				}
 
 			}
@@ -1500,6 +1528,38 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"order" : 3,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"order" : 2,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"order" : 1,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"order" : 0,
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -1790,22 +1850,22 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "getpoint.maxpat",
-				"bootpath" : "~/git/eyebeam-workshop-2/facetracking/patchers",
+				"bootpath" : "~/c74/eyebeam-workshop-2/facetracking/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pointdist.maxpat",
-				"bootpath" : "~/git/eyebeam-workshop-2/facetracking/patchers",
+				"bootpath" : "~/c74/eyebeam-workshop-2/facetracking/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "autoscale.maxpat",
-				"bootpath" : "~/git/eyebeam-workshop-2/util",
-				"patcherrelativepath" : "../../util",
+				"bootpath" : "~/c74/eyebeam-workshop-2/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
