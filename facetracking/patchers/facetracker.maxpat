@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1380.0, 680.0 ],
+		"rect" : [ 255.0, 313.0, 1380.0, 680.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1511,7 +1511,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 34.0, 222.0, 436.0, 370.0 ],
-					"rendermode" : 1,
+					"rendermode" : 0,
 					"url" : "file://mesh-tracker.html"
 				}
 
