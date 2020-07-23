@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 255.0, 313.0, 1380.0, 680.0 ],
+		"rect" : [ 34.0, 79.0, 956.0, 527.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1469,18 +1469,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 34.0, 78.0, 137.0, 22.0 ],
-					"text" : "conformpath native boot"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1488,18 +1476,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 34.0, 18.0, 104.0, 22.0 ],
 					"text" : "mesh-tracker.html"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 47.0, 77.0, 22.0 ],
-					"text" : "absolutepath"
 				}
 
 			}
@@ -1593,13 +1569,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -1660,7 +1629,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1784,13 +1753,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-90", 0 ]
 				}
@@ -1864,8 +1826,8 @@
 			}
 , 			{
 				"name" : "autoscale.maxpat",
-				"bootpath" : "~/c74/eyebeam-workshop-2/patchers",
-				"patcherrelativepath" : "../../patchers",
+				"bootpath" : "~/Documents/Max 8/Library/eyebeam-workshop-2-master/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Library/eyebeam-workshop-2-master/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
