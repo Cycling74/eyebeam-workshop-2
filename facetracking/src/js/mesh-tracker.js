@@ -1,18 +1,38 @@
 let model;
 let streamSettings;
+let streamChoices;
 
-async function setupVideo() {
-    let video = document.getElementById('videoel');
-    return navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+function handleChange(e) {
+  selectVideoStreamById(e.target.value);
+}
+
+async function selectVideoStreamById(deviceId) {
+  let video = document.getElementById('videoel');
+  return navigator.mediaDevices.getUserMedia({ video: { deviceId }})
     .then(function(stream) {
-        video.onloadeddata = runModel;
-        video.srcObject = stream;
-        streamSettings = stream.getVideoTracks()[0].getSettings();
-        video.play();
+      video.onloadeddata = runModel;
+      video.srcObject = stream;
+      streamSettings = stream.getVideoTracks()[0].getSettings();
+      video.play();
     })
     .catch(function(err) {
         console.log("An error occurred: " + err);
     });
+}
+
+async function setupVideo() {
+  await navigator.mediaDevices.getUserMedia({ video: true }); // ask for permission
+  let select = document.getElementById('picker');
+  streamChoices = await navigator.mediaDevices.enumerateDevices();
+  streamChoices = streamChoices.filter(d => d.kind === "videoinput");
+  for (let i = 0; i < streamChoices.length; i++) {
+    let videoStreamData = streamChoices[i];
+    let option = document.createElement("option");
+    option.text = videoStreamData.label;
+    option.value = videoStreamData.deviceId;
+    select.appendChild(option);
+  }
+  return selectVideoStreamById(streamChoices[0].deviceId);
 }
 
 async function runModel() {

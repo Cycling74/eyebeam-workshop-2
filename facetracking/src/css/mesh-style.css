@@ -7,3 +7,13 @@
 	left: 0px;
 	top: 0px;
 }
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+.header select {
+	height: 22px;
+	margin-left: 10px;
+}
